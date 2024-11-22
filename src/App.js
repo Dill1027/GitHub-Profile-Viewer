@@ -16,8 +16,8 @@ function App() {
       setError("");
       // Use the dynamic username variable
       const userResponse = await axios.get(`https://api.github.com/users/${Dill1027}`);
-      const reposResponse = await axios.get(`https://api.github.com/users/${username}/repos`);
-      const followersResponse = await axios.get(`https://api.github.com/users/${username}/followers`);
+      const reposResponse = await axios.get(`https://api.github.com/users/${Dill1027}/repos`);
+      const followersResponse = await axios.get(`https://api.github.com/users/${Dill1027}/followers`);
     
       setUserData(userResponse.data);
       setRepos(reposResponse.data);
